@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.inventory,
+.lootbox,
+.odds {
+    width: 30%;
+}
+
+.inventory h2,
+.lootbox h1,
+.odds h2 {
+    text-align: center;
+    color: #333;
+}
+
+.inventory ul,
+.odds ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.inventory li,
+.odds li {
+    margin-bottom: 10px;
+    white-space: nowrap;
+    /* Prevent line breaks */
+}
+
+li.common {
+    color: #0000FF;
+    /* Blue */
+}
+
+li.rare {
+    color: #00FF00;
+    /* Green */
+}
+
+li.epic {
+    color: #FFA500;
+    /* Orange */
+}
+
+li.legendary {
+    color: #FFD700;
+    /* Gold */
+}
+
+li.mythical {
+    color: #FF1493;
+    /* Pink */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+div#result {
+    margin-top: 20px;
+}
