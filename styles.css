@@ -1,40 +1,93 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
-}
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    Color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: xx-large;
+  }
 
-.container {
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: larger;
+  }
+
+  .container {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     margin-top: 50px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 20px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Home page styles */
+  .home-content {
     text-align: center;
-}
-
-.inventory,
-.lootbox,
-.odds {
+    margin-top: 50px;
+  }
+  
+  /* Contact page styles */
+  .contact-content {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Lootbox page styles */
+  .lootbox {
     width: 30%;
-}
-
-.inventory h2,
-.lootbox h1,
-.odds h2 {
+  }
+  
+  .inventory, .odds {
+    width: 30%;
+  }
+  
+  .inventory h2, .odds h2, .lootbox h1 {
     text-align: center;
     color: #333;
-}
-
-.inventory ul,
-.odds ul {
+  }
+  
+  .inventory ul, .odds ul {
     list-style-type: none;
     padding: 0;
-}
-
-.inventory li,
-.odds li {
+  }
+  
+  .inventory li, .odds li {
     margin-bottom: 10px;
-    white-space: nowrap;
-    /* Prevent line breaks */
-}
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
 
 li.common {
     color: #0000FF;
