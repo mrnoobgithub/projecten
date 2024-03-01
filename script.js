@@ -4,7 +4,7 @@ const lootItems = [
     { name: "Rare Shield", probability: 0.25, rarity: "Rare" },       // 25% chance
     { name: "Epic Armor", probability: 0.10, rarity: "Epic" },        // 10% chance
     { name: "Legendary Potion", probability: 0.07, rarity: "Legendary" }, // 7% chance
-    { name: "Mythical Ring", probability: 0.03, rarity: "Mythical" }     // 0.1% chance
+    { name: "Mythical Ring", probability: 0.03, rarity: "Mythical" }     // 3% chance
 ];
 
 // Inventory to store rolled items
