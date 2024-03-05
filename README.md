@@ -1,1 +1,1 @@
-Hier maak ik al mijn projecten in mijn vrije tijd
+Hier staan al mijn projecten
