@@ -1,0 +1,186 @@
+/* secret confetti img style, display none zodat het na click verschijnt*/
+#confetti {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body,
+h1,
+p {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    max-height: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    padding-right: 15px;
+}
+
+header {
+    font-size: larger;
+    color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-size: larger;
+    color: white;
+    padding: 10px;
+}
+
+nav a {
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: gold;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.backgroundimg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+form input {
+    margin: 7px;
+    padding: 7px;
+}
+
+.quiz-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.correct-answer {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect-answer {
+    color: red;
+    font-weight: bold;
+}
+
+h3 {
+    color: black;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 350px; /* Pas aan zoals gewenst */
+    background-color: #333; /* Kleur van de sidebar */
+    color: white;
+    padding-top: 1px; /* Ruimte bovenaan de sidebar */
+    margin-top: 100px;
+}
+
+#antwoord {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+.scoreboard-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 250px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.score {
+    font-size: larger;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Header items onder elkaar op kleinere schermen */
+        align-items: center; /* Gecentreerde uitlijning van header items */
+        padding: 10px 0; /* Minder verticale padding */
+    }
+
+    nav {
+        flex-direction: column; /* Navigatie-items onder elkaar op kleinere schermen */
+        justify-content: center; /* Gecentreerde uitlijning van navigatie-items */
+        padding: 10px 0; /* Minder verticale padding */
+    }
+
+    nav a {
+        margin: 5px 0; /* Minder verticale marge tussen navigatielinks */
+    }
+
+    .sidebar {
+        width: 100%; /* Volledige breedte voor zijbalk op kleinere schermen */
+        height: auto; /* Hoogte aanpassen aan inhoud */
+        position: static; /* Verander positie naar standaard (geen fixed meer) */
+        margin-top: 0; /* Geen marges bovenaan */
+    }
+
+    .scoreboard-container {
+        position: relative; /* Verander positie naar relatief */
+        top: auto; /* Reset de top positie */
+        right: auto; /* Reset de right positie */
+        margin: 20px auto; /* Marge aanpassen voor het midden van het scherm */
+    }
+}

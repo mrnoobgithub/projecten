@@ -1,0 +1,141 @@
+body,
+h1,
+p {
+   
+    font-family: 'Arial', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: black;
+    font-size: larger;
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+  margin-bottom: auto;
+}
+
+nav a {
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: gold;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.backgroundimg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+#steenpapierschaar {
+    text-align: center;
+    color: yellow;
+    margin-top: 25vh;
+}
+
+#steenpapierschaartekst {
+    font-size: larger;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: yellow;
+    font-size: 20pt;
+}
+
+.steenpapierschaarresultaat {
+    font-size: larger;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: yellow;
+    font-size: 20pt;
+}
+
+.gelijkspel {
+    color: blue;
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+
+.wint {
+    color: limegreen;
+    font-size: 20pt;
+    margin-bottom: 20px;
+}
+
+.verliest {
+    color: red;
+    font-size: 20pt;
+    margin-bottom: 20px;
+
+}
+
+.score {
+    font-size: larger;
+    text-align: center;
+    color: goldenrod;
+    text-decoration: underline;
+    font-size: 20pt;
+}
+
+.steenpapierschaarbutton {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: larger;
+    background-color: black;
+    color: gold;
+    border: 5px solid gold;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.steenpapierschaarbutton:hover {
+    background-color: darkgoldenrod;
+}
+
+header {
+    font-size: larger;
+    color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+
+header img {
+    max-height: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    padding-right: 15px;
+}

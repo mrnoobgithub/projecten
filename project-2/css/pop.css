@@ -1,0 +1,199 @@
+/* Resetten van marges en padding voor body, h1 en p */
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Stijl voor header image */
+header img {
+    max-height: 50px;
+    border-radius: 50%;
+    padding: auto;
+}
+
+/* Stijl voor header */
+header {
+    font-size: larger;
+    color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+
+/* Stijl voor navigatie */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    font-size: larger;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Stijl voor links in navigatie */
+nav a {
+    margin-right: auto;
+    margin-left: auto;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover effect voor links in navigatie */
+nav a:hover {
+    color: gold;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+/* Stijl voor slot machine */
+.slot-machine {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Stijl voor individuele slot */
+.slot {
+    display: inline-block;
+    font-size: 50px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+/* Stijl voor knop */
+button {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 20px 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Hover effect voor knop */
+button:hover {
+    background-color: gold;
+}
+
+/* Stijl voor alinea */
+p {
+    margin-top: 20px;
+}
+
+/* Stijl voor sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 350px;
+    background-color: #333;
+    color: white;
+    padding-top: 1px;
+    margin-top: 30%;
+}
+
+#antwoord {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+/* Stijl voor inhoud naast de sidebar */
+.main-content {
+    margin-top: 100px;
+    margin-left: 200px;
+    padding: 20px;
+}
+
+/* Algemene opmaak van de body */
+body {
+    overflow: hidden;
+    color: goldenrod;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stijl voor achtergrondafbeelding */
+.backgroundimg {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+/* Stijl voor footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+/* Voeg mediaquery toe voor kleinere schermen */
+@media screen and (max-width: 768px) {
+    /* Pas de breedte van de slot machine aan */
+    .slot-machine {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    /* Pas de breedte van de navigatie aan */
+    nav {
+        flex-direction: column;
+    }
+
+    /* Maak de knop in de navigatie volledige breedte */
+    nav a {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+  
+
+    /* Pas de sidebar aan voor kleinere schermen */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        margin-top: 0;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    /* Pas de marge van de hoofdinhoud aan voor kleinere schermen */
+    .main-content {
+        margin-left: 0;
+    }
+}

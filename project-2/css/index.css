@@ -1,0 +1,145 @@
+        /* alle style wordt gereset naar 0 */
+        body,
+        h1,
+        p {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* header image style zodat de image de juiste maat heeft */
+        header img {
+            max-height: 50px;
+            border-radius: 50%;
+            padding: 5px;
+            padding-right: 15px;
+        }
+
+        /* header style zodat de header de juiste maat heeft en op de juiste plek zit */
+        header {
+            font-size: larger;
+            color: gold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            width: 100%;
+        }
+
+        /* nav style zodat de nav de juiste maat heeft, op de juiste plek zit en de juiste kleur heeft*/
+        nav {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            background-color: black;
+            font-size: larger;
+            color: white;
+            padding: 10px;
+        }
+
+        /* style voor de woorden in de navbar, zorgt voor de juiste kleur */
+        nav a {
+            margin-right: 10px;
+            margin-left: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* hover effect voor de woorden in de navbar */
+        nav a:hover {
+            color: gold;
+            transition: 0.3s;
+            transform: scale(1.1);
+        }
+
+        form {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 10%;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .verifieerbutton {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .verifieerbutton:hover {
+            background-color: white;
+            color: black;
+            transition: 0.3s;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        /* background image style, zodat de image op de juiste plek zit */
+        .backgroundimg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        /* welcome bericht style, zodat het bericht op de juiste plek zit */
+        #welcomeOverlay {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 20;
+        }
+
+        /* welcome message style, zodat het bericht op de juiste plek zit */
+        #welcomeMessage {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* close button style, zodat de button op de juiste plek zit */
+        #closeButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        /* extra styling voor closing button, staat apart want anders pakt hij het niet op */
+        span {
+            font-family: cursive;
+            font-size: xx-large;
+            color: red;
+        }
+
+        /* footer style, zodat het footer op de juiste plek zit */
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: white;
+        }
