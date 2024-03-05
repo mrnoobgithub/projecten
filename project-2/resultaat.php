@@ -15,7 +15,7 @@
    
 
     <!-- link naar de css -->
-    <link rel="stylesheet" href="../damien/css/result.css">
+    <link rel="stylesheet" href="css/result.css">
 
 
 <body>

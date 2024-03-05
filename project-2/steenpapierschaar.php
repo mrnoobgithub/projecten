@@ -15,7 +15,7 @@ if (!isset($_SESSION['score_steenpapierschaar'])) {
 
 <head>
     <title>Steen, Papier, Schaar</title>
-    <link rel="stylesheet" href="../damien/css/steenpapierschaar.css">
+    <link rel="stylesheet" href="css/steenpapierschaar.css">
 </head>
 
 <body>
@@ -48,9 +48,9 @@ if (!isset($_SESSION['score_steenpapierschaar'])) {
         <section id='steenpapierschaar'>
             <h1 id="steenpapierschaartekst"> kies een optie: </h1>
             <form method="post" action="check.php" id='steenpapierschaarform'>
-                <input type="image" src="../damien/img/steen.png" alt="steen" class="keuzeBtn" value="steen" onclick="setChoice('steen')">
-                <input type="image" src="../damien/img/papier.png" alt="papier" class="keuzeBtn" value="papier" onclick="setChoice('papier')">
-                <input type="image" src="../damien/img/schaar.png" alt="schaar" class="keuzeBtn" value="schaar" onclick="setChoice('schaar')">
+                <input type="image" src="img/steen.png" alt="steen" class="keuzeBtn" value="steen" onclick="setChoice('steen')">
+                <input type="image" src="img/papier.png" alt="papier" class="keuzeBtn" value="papier" onclick="setChoice('papier')">
+                <input type="image" src="img/schaar.png" alt="schaar" class="keuzeBtn" value="schaar" onclick="setChoice('schaar')">
                 <input type="hidden" id="gebruikersKeuze" name="keuze" value="">
             </form>
         </section>

@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <!-- link naar de css -->
-    <link rel="stylesheet" type="text/css" href="../damien/css/quiz.css">
+    <link rel="stylesheet" type="text/css" href="css/quiz.css">
 </head>
 
 <body>

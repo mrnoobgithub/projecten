@@ -6,7 +6,7 @@ session_start();
 <!DOCTYPE html>
 
 <head>
-  <link rel="stylesheet" href="../damien/css/kopofmunt.css">
+  <link rel="stylesheet" href="css/kopofmunt.css">
   <title>Kop of Munt!</title>
 </head>
 
